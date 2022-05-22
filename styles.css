@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background: linear-gradient(to bottom right, #fff, rgba(19, 24, 63, 0.1));
+  background: linear-gradient(to bottom right, #fff, rgba(102, 108, 163, 0.15));
   width: 100vw;
   overflow-x: hidden;
 }
@@ -103,12 +103,10 @@ h3 {
 .btn-1 {
   color: #fff;
   background: #13183F;
-
-
 }
 
 .btn-1:hover {
-  background: linear-gradient(rgba(#fff, .5)), linear-gradient(#13183F);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#13183F));
 }
 
 .btn-2 {
@@ -118,8 +116,8 @@ h3 {
 }
 
 .btn-2:hover {
-  background: linear-gradient(rgba(#fff, .5)), linear-gradient(to bottom, #F02AA6, #FF6F48);
-  ;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
+  background: linear-gradient(rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #FF6F48, #F02AA6);
 }
 
 .btn-3 {
@@ -128,7 +126,8 @@ h3 {
 }
 
 .btn-3:hover {
-  background: linear-gradient(rgba(#fff, .5)), linear-gradient(to bottom, #4851FF, #F02AA6);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#4851ff), to(#F02AA6));
+  background: linear-gradient(rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #4851FF, #F02AA6);
 }
 
 a {
@@ -140,12 +139,11 @@ a {
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 3rem;
-
-
 }
 
 a:hover {
-  background: linear-gradient(rgba(#fff, .5)), #F02AA6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5))), #F74780;
+  background: linear-gradient(rgba(255, 255, 255, 0.5)), #F74780;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -287,9 +285,7 @@ a:hover {
     height: 93.6rem;
     position: absolute;
     top: -20rem;
-    right: -30rem;
+    right: -40rem;
     z-index: -1;
   }
-}
-
 }
