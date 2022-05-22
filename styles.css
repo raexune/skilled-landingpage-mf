@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(to bottom right, #fff, rgba(19, 24, 63, 0.2));
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.hero .text {
+  width: 100%;
+  place-self: center;
+}
+
+.hero img {
+  width: 100%;
+  place-self: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 8.9rem;
+}
+
+footer {
+  background-color: #13183F;
+}
+
+main {
+  width: 100%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5.1rem;
+  color: #13183F;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+h3 {
+  padding-top: 5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #13183F;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.grid p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+
+}
+
+.btn-1 {
+  color: #fff;
+  background: #13183F;
+
+
+}
+
+.btn-1:hover {
+  background: linear-gradient(rgba(#fff, .5)), linear-gradient(#13183F);
+}
+
+.btn-2 {
+  margin-top: 3rem;
+  color: #fff;
+  background: linear-gradient(to bottom, #F02AA6, #FF6F48);
+}
+
+.btn-2:hover {
+  background: linear-gradient(rgba(#fff, .5)), linear-gradient(to bottom, #F02AA6, #FF6F48);
+  ;
+}
+
+.btn-3 {
+  color: #fff;
+  background: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+
+.btn-3:hover {
+  background: linear-gradient(rgba(#fff, .5)), linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+
+a {
+  text-decoration: none;
+  background: #F02AA6;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+
+
+}
+
+a:hover {
+  background: linear-gradient(rgba(#fff, .5)), #F02AA6;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.grid-colored {
+  width: 100%;
+  background: linear-gradient(to bottom, #F02AA6, #FF6F48);
+  place-self: center;
+  border-radius: 11px;
+  padding: 2rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+}
+
+.grid-white {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  place-self: center;
+  border-radius: 11px;
+  padding: 2rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+}
+
+.icon {
+  position: absolute;
+  top: -2.8rem;
+  left: 2rem;
+}
+
+
+@media (min-width: 800px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .grid-colored {
+    height: 100%;
+  }
+
+  h2 {
+    margin-top: 8rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+
+  .hero {
+    height: 50rem;
+  }
+
+  .hero img {
+    width: 64rem;
+    height: 64rem;
+    position: absolute;
+    top: 0;
+    right: -20rem;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .logo {
+    width: 11.1rem;
+    height: 2.8rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .grid-colored {
+    height: 100%;
+  }
+
+  .grid-white {
+    height: 100%;
+  }
+
+  h2 {
+    margin-top: 8rem;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+
+  .hero {
+    height: 70rem;
+  }
+
+  .hero img {
+    width: 99.2rem;
+    height: 93.6rem;
+    position: absolute;
+    top: -20rem;
+    right: -30rem;
+    z-index: -1;
+  }
+}
+
+}
